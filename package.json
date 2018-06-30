@@ -1,7 +1,7 @@
 {
   "name": "io.cordova.myapp95097b",
-  "author": "",
-  "homepage": "",
+  "author": "Roberto Albino Junior",
+  "homepage": "https://cotaeasy.herokuapp.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -24,6 +24,7 @@
     "ionic-angular": "2.0.1",
     "ionic-native": "2.4.1",
     "ionicons": "3.0.0",
+    "ng2-restangular": "^0.1.30",
     "rxjs": "5.0.0-beta.12",
     "sw-toolbox": "3.4.0",
     "zone.js": "0.6.26"
@@ -41,5 +42,9 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "-vs-binding": { "BeforeBuild": [ "ionic:build" ] }
+  "-vs-binding": {
+    "BeforeBuild": [
+      "ionic:build"
+    ]
+  }
 }
