@@ -83,7 +83,7 @@
   </Target>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties />
+      <UserProperties src_4manifest_1json__JSONSchema="" />
     </VisualStudio>
   </ProjectExtensions>
   <ItemGroup>
@@ -97,8 +97,22 @@
     <Content Include="**\**" Exclude="**\platforms\**;**\bin\**;**\bld\**;**\node_modules\**;**\simulation\**;.gitignore;CotaEasy.*" />
   </ItemGroup>
   <ItemGroup>
+    <Content Remove="src\pages\fornecedor\**" />
+    <Content Remove="src\pages\lances\**" />
+    <Content Remove="src\pages\produto\**" />
+    <Content Remove="src\pages\usuario\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\pages\usuario\novo-usuario\novo-usuario.html" />
+    <Content Include="src\pages\usuario\novo-usuario\novo-usuario.scss" />
+    <Content Include="src\pages\usuario\novo-usuario\novo-usuario.ts" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Update="config.xml">
       <SubType>Designer</SubType>
     </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src\models\" />
   </ItemGroup>
 </Project>

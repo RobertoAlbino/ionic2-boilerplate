@@ -1,0 +1,35 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>CotaEasy</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col text-center>
+        <form>
+          <ion-list>
+
+            <ion-item>
+              <ion-label fixed>Email</ion-label>
+              <ion-input type="email" name="email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label fixed>Senha</ion-label>
+              <ion-input type="password" name="senha"></ion-input>
+            </ion-item>
+
+            <div padding>
+              <button ion-button color="secondary" block>Login</button>
+              <button ion-button block (click)="cadastrarNovoUsuario()">Não possui cadastro? clique aqui</button>
+            </div>
+
+          </ion-list>
+        </form>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

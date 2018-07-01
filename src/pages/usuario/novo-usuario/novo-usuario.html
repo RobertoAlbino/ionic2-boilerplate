@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastrar novo usuário</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Perfil:</ion-label>
+      <ion-select [(ngModel)]="usuario.perfil">
+        <ion-option value="0">Usuário</ion-option>
+        <ion-option value="1">Fornecedor</ion-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Nome:</ion-label>
+      <ion-input type="text" name="nome" [(ngModel)]="usuario.nome"></ion-input>
+    </ion-item>
+    <ion-item>
+
+      <ion-label fixed>E-mail:</ion-label>
+      <ion-input type="email" name="email" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+    <ion-item>
+
+      <ion-label fixed>Telefone:</ion-label>
+      <ion-input type="number" name="telefone" [(ngModel)]="usuario.telefone"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Senha:</ion-label>
+      <ion-input type="password" name="senha" [(ngModel)]="usuario.senha"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label fixed>Confirmar:</ion-label>
+      <ion-input type="password" name="segundaSenha" [(ngModel)]="usuario.segundaSenha"></ion-input>
+    </ion-item>
+
+    <button ion-button color="secondary" block (click)="cadastrarNovoUsuario()"><ion-spinner name="bubbles" [hidden]="espera"></ion-spinner>Cadastrar</button>
+
+  </ion-list>
+</ion-content>
