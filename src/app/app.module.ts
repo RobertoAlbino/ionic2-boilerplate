@@ -6,6 +6,8 @@ import { RestangularModule, Restangular } from 'ng2-restangular';
 import { MyApp } from './app.component';
 import { LoginPage } from '../pages/login/login';
 import { NovoUsuarioPage } from '../pages/usuario/novo-usuario/novo-usuario';
+import { MenuUsuarioPage } from '../pages/usuario/menu-usuario/menu-usuario';
+import { GerenciarProdutosPage } from '../pages/produto/gerenciar-produtos/gerenciar-produtos';
 import { ToastService } from '../services/ToastService';
 
 // Configurações globais do Restangular
@@ -19,7 +21,9 @@ export function RestangularConfigFactory(RestangularProvider) {
   declarations: [
     MyApp,
     LoginPage,
-    NovoUsuarioPage
+    NovoUsuarioPage,
+    MenuUsuarioPage,
+    GerenciarProdutosPage
   ],
   imports: [
     IonicModule.forRoot(MyApp),
@@ -29,7 +33,9 @@ export function RestangularConfigFactory(RestangularProvider) {
   entryComponents: [
     MyApp,
     LoginPage,
-    NovoUsuarioPage
+    NovoUsuarioPage,
+    MenuUsuarioPage,
+    GerenciarProdutosPage
   ],
   providers: [{ provide: ErrorHandler, useClass: IonicErrorHandler }, ToastService ]
 })

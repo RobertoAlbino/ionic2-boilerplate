@@ -103,6 +103,12 @@
     <Content Remove="src\pages\usuario\**" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="src\pages\produto\gerenciar-produtos\gerenciar-produtos.html" />
+    <Content Include="src\pages\produto\gerenciar-produtos\gerenciar-produtos.scss" />
+    <Content Include="src\pages\produto\gerenciar-produtos\gerenciar-produtos.ts" />
+    <Content Include="src\pages\usuario\menu-usuario\menu-usuario.html" />
+    <Content Include="src\pages\usuario\menu-usuario\menu-usuario.scss" />
+    <Content Include="src\pages\usuario\menu-usuario\menu-usuario.ts" />
     <Content Include="src\pages\usuario\novo-usuario\novo-usuario.html" />
     <Content Include="src\pages\usuario\novo-usuario\novo-usuario.scss" />
     <Content Include="src\pages\usuario\novo-usuario\novo-usuario.ts" />

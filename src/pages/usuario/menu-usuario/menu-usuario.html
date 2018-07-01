@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>CotaEasy</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content>
+  <div class="list">
+    <button ion-item text-center (click)="redirecionarCotacao()">
+      <ion-icon name="logo-usd"></ion-icon>
+      Acompanhar produtos já cotados
+    </button>
+    <button ion-item text-center (click)="redirecionarProdutos()">
+      <ion-icon ios="ios-pricetag" md="md-pricetag"></ion-icon>
+      Gerenciar produtos
+    </button>
+    <button ion-item text-center (click)="redirecionarFornecedores()">
+      <ion-icon ios="ios-person" md="md-person"></ion-icon>
+      Fornecedores
+    </button>
+    <button ion-item text-center (click)="sair()">
+      <ion-icon name="exit"></ion-icon>
+      Sair
+    </button>
+  </div>
+</ion-content>

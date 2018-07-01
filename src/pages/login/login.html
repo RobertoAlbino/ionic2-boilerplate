@@ -14,16 +14,16 @@
 
             <ion-item>
               <ion-label fixed>Email</ion-label>
-              <ion-input type="email" name="email"></ion-input>
+              <ion-input type="email" name="email" [(ngModel)]="login.email"></ion-input>
             </ion-item>
 
             <ion-item>
               <ion-label fixed>Senha</ion-label>
-              <ion-input type="password" name="senha"></ion-input>
+              <ion-input type="password" name="senha" [(ngModel)]="login.senha"></ion-input>
             </ion-item>
 
             <div padding>
-              <button ion-button color="secondary" block>Login</button>
+              <button ion-button color="secondary" block (click)="logar()"><ion-spinner name="bubbles" [hidden]="espera"></ion-spinner>Login</button>
               <button ion-button block (click)="cadastrarNovoUsuario()">Não possui cadastro? clique aqui</button>
             </div>
 
