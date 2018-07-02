@@ -1,0 +1,12 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastrar novo produto</ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-item>
+    <ion-label fixed>Nome:</ion-label>
+    <ion-input type="text" name="nome" [(ngModel)]="produto.nome"></ion-input>
+  </ion-item>
+  <button ion-button color="secondary" block (click)="cadastrarNovoProduto()"><ion-spinner name="bubbles" [hidden]="espera"></ion-spinner>Cadastrar</button>
+</ion-content>

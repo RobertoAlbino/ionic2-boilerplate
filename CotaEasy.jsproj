@@ -106,6 +106,9 @@
     <Content Include="src\pages\produto\gerenciar-produtos\gerenciar-produtos.html" />
     <Content Include="src\pages\produto\gerenciar-produtos\gerenciar-produtos.scss" />
     <Content Include="src\pages\produto\gerenciar-produtos\gerenciar-produtos.ts" />
+    <Content Include="src\pages\produto\novo-produto\novo-produto.html" />
+    <Content Include="src\pages\produto\novo-produto\novo-produto.scss" />
+    <Content Include="src\pages\produto\novo-produto\novo-produto.ts" />
     <Content Include="src\pages\usuario\menu-usuario\menu-usuario.html" />
     <Content Include="src\pages\usuario\menu-usuario\menu-usuario.scss" />
     <Content Include="src\pages\usuario\menu-usuario\menu-usuario.ts" />
